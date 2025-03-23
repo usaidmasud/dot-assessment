@@ -1,0 +1,28 @@
+@use "../../../assets/variable.scss" as *;
+.input-field {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 16px;
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+}

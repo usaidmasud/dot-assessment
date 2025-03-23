@@ -1,0 +1,51 @@
+@use "../../../assets/variable.scss" as *;
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: $border-radius;
+  background-color: $primary-color;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primary-color-dark;
+  }
+
+  // Primary button variant
+  &.button-primary {
+    background-color: $primary-color; // Use primary color
+    color: white;
+
+    &:hover {
+      background-color: $primary-color-dark; // Darker shade on hover
+    }
+  }
+
+  // Default button variant
+  &.button-secondary {
+    background-color: $secondary-color; // Use secondary color
+    color: #fff; // Use a contrasting text color
+
+    &:hover {
+      background-color: $secondary-color-dark; // Darker shade on hover
+    }
+  }
+
+  // Large button size
+  &.button-md {
+    padding: 8px 16px; // Larger padding
+    font-size: 16px; // Larger font size
+  }
+
+  // Small button size
+  &.button-sm {
+    padding: 5px 10px; // Smaller padding
+    font-size: 12px; // Smaller font size
+  }
+  &.button-block {
+    width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../../assets/variable.scss" as *;
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+input[type="checkbox"] {
+  display: none; // Sembunyikan checkbox asli
+}
+
+.checkbox-circle {
+  width: 16px; // Ukuran lingkaran
+  height: 16px; // Ukuran lingkaran
+  border: 2px solid #ccc; // Border lingkaran
+  border-radius: 50%; // Membuat lingkaran
+  margin-right: 10px; // Jarak antara lingkaran dan teks
+  cursor: pointer; // Menunjukkan kursor pointer saat hover
+  position: relative; // Untuk posisi elemen pseudo
+}
+
+.checkbox-circle::after {
+  content: ""; // Membuat elemen pseudo
+  position: absolute;
+  top: 50%; // Posisikan di tengah
+  left: 50%; // Posisikan di tengah
+  width: 8px; // Ukuran centang
+  height: 8px; // Ukuran centang
+  background-color: $primary-color; // Warna centang
+  border-radius: 50%; // Membuat centang berbentuk lingkaran
+  transform: translate(-50%, -50%) scale(0); // Sembunyikan centang
+  transition: transform 0.2s ease; // Transisi saat centang muncul
+}
+
+input[type="checkbox"]:checked + .checkbox-circle::after {
+  transform: translate(-50%, -50%) scale(1); // Tampilkan centang saat checkbox dicentang
+}
+
+span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.button-danger {
+  background-color: $error-color;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $error-color-dark;
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+  }
+}

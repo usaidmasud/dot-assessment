@@ -1,0 +1,196 @@
+@use "./variable.scss" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif; /* Use Nunito font */
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+  color: #343a40;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+// src/styles/grid.scss
+
+/* Kelas dasar untuk grid */
+.grid {
+  display: grid; /* Menggunakan grid layout */
+}
+
+/* Kelas untuk grid dengan 2 kolom */
+.grid-col-2 {
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Membagi grid menjadi 2 kolom yang sama */
+}
+
+/* Kelas untuk grid dengan 3 kolom */
+.grid-col-3 {
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Membagi grid menjadi 3 kolom yang sama */
+}
+
+/* Kelas untuk grid dengan 4 kolom */
+.grid-col-4 {
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Membagi grid menjadi 4 kolom yang sama */
+}
+
+/* Kelas untuk grid dengan 6 kolom */
+.grid-col-6 {
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* Membagi grid menjadi 6 kolom yang sama */
+}
+
+/* Kelas untuk grid dengan 12 kolom (sistem grid umum) */
+.grid-col-12 {
+  grid-template-columns: repeat(
+    12,
+    1fr
+  ); /* Membagi grid menjadi 12 kolom yang sama */
+}
+
+/* Responsif: Mengubah jumlah kolom berdasarkan ukuran layar */
+@media (max-width: 768px) {
+  .grid-col-2 {
+    grid-template-columns: 1fr; /* 1 kolom pada layar kecil */
+  }
+
+  .grid-col-3 {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
+  }
+
+  .grid-col-4 {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
+  }
+
+  .grid-col-6 {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar kecil */
+  }
+
+  .grid-col-12 {
+    grid-template-columns: repeat(6, 1fr); /* 6 kolom pada layar kecil */
+  }
+}

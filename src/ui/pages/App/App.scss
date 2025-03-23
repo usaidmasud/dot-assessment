@@ -1,0 +1,23 @@
+@use "../../../assets/variable.scss" as *;
+
+.app {
+  display: flex;
+  gap: 8px;
+
+  & > button {
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: $border-radius;
+    border: none;
+    background-color: $primary-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+  }
+}

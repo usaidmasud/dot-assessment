@@ -1,0 +1,9 @@
+// src/components/WhiteList.scss
+
+.size-6 {
+  width: 24px; // Atur lebar ikon
+  height: 24px; // Atur tinggi ikon
+  color: #ccc; // Warna ikon saat tidak aktif
+  transition: stroke 0.3s ease; // Transisi halus untuk perubahan warna
+  cursor: pointer;
+}

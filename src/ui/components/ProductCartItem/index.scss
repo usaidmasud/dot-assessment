@@ -1,0 +1,55 @@
+@use "../../../assets/variable.scss" as *;
+
+.product-cart-item {
+  display: flex;
+  border-radius: $border-radius;
+  background-color: #ededed;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .cart-info {
+    padding: 14px;
+    .title {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $primary-color;
+    }
+    .quantity {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 8px;
+      span {
+        font-weight: 700;
+        color: $error-color;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      & svg {
+        width: 24px;
+        height: 24px;
+        color: $secondary-color;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $secondary-color-dark;
+        }
+      }
+    }
+  }
+}

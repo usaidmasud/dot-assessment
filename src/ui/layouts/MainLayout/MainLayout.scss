@@ -1,0 +1,12 @@
+@use "../../../assets/variable.scss" as *;
+
+.main-layout {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

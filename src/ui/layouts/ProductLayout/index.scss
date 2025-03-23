@@ -1,0 +1,76 @@
+@use "../../../assets/variable.scss" as *;
+
+.product-layout {
+  max-width: 480px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+  // padding: 20px;
+  & header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8px 16px;
+    border-bottom: 2px solid $primary-color;
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 40px;
+      }
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    .search {
+      flex: 1;
+    }
+    .search > input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid $primary-color;
+    }
+    .cart {
+      & button {
+        padding: 6px;
+        background: #ededed;
+        outline: none;
+        border: none;
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background: #dbdbdb;
+        }
+        & svg {
+          color: $primary-color;
+          width: 24px;
+          height: 24px;
+        }
+        & span {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          font-size: 12px;
+          text-align: center;
+          background-color: $primary-color;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  main {
+    padding: 20px;
+  }
+}

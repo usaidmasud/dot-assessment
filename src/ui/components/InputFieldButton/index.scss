@@ -1,0 +1,37 @@
+@use "../../../assets/variable.scss" as *;
+
+.input-group-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  overflow: hidden;
+  height: 35px;
+  transition: border-color 0.3s ease;
+  &:hover {
+    border-color: $primary-color-light;
+  }
+  .input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .input-button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    height: 100%;
+    cursor: pointer;
+  }
+  &:focus-within {
+    border-color: $primary-color;
+
+    .input-button:hover {
+      background-color: $primary-color-dark;
+    }
+  }
+}

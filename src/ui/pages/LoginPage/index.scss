@@ -1,0 +1,19 @@
+@use "../../../assets/variable.scss" as *;
+
+.login-page {
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  .description {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .back-home {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}

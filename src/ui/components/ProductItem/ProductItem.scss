@@ -1,0 +1,75 @@
+@use "../../../assets/variable.scss" as *;
+
+.product-item {
+  max-width: 480px;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  // padding: 15px;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .white-list {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9900;
+  }
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 14px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #333;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    color: #000;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .product-footer {
+    padding: 10px 0;
+  }
+  .in-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  .add-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .count {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+}
