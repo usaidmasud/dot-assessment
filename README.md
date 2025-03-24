@@ -27,7 +27,7 @@ Follow the steps below to install and run the project:
 ```bash
   npm install
   npm run build
-  npm run start
+  npm run preview
 ```
 
 The application will run at: [http://localhost:5173](http://localhost:5173)
