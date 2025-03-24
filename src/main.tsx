@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
 import "./assets/index.scss";
 import ReduxProvider from "./libs/redux/ReduxProvider";
-import Router from "./router";
+import Router from "./libs/router";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>

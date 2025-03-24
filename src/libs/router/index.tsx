@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router";
-import App from "../ui/pages/App";
-import ProductPage from "../ui/pages/ProductPage";
-import TaskManagementPage from "../ui/pages/TaskManagementPage";
-import MainLayout from "../ui/layouts/MainLayout";
-import ProductLayout from "../ui/layouts/ProductLayout";
-import TaskManagementLayout from "../ui/layouts/TaskManagementLayout";
-import ProductDetailPage from "../ui/pages/ProductDetailPage";
-import { ROUTE_CONSTANT } from "../constants/route.constant";
-import ProductCartPage from "../ui/pages/ProductCartPage";
-import AuthLayout from "../ui/layouts/AuthLayout";
-import LoginPage from "../ui/pages/LoginPage";
+import { ROUTE_CONSTANT } from "../../constants/route.constant";
+import MainLayout from "../../ui/layouts/MainLayout";
+import App from "../../ui/pages/App";
+import ProductLayout from "../../ui/layouts/ProductLayout";
+import ProductPage from "../../ui/pages/ProductPage";
+import ProductDetailPage from "../../ui/pages/ProductDetailPage";
+import ProductCartPage from "../../ui/pages/ProductCartPage";
+import AuthLayout from "../../ui/layouts/AuthLayout";
+import LoginPage from "../../ui/pages/LoginPage";
+import TaskManagementLayout from "../../ui/layouts/TaskManagementLayout";
+import TaskManagementPage from "../../ui/pages/TaskManagementPage";
 
 export default function Router() {
   return (
